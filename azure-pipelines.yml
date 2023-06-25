@@ -39,3 +39,10 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+    - task: SSH@0
+      inputs:
+        runOptions: 'commands'
+        commands: 'chmod 655 $(Build.SourcesDirectory)/Dockerfile'
+        readyTimeout: '20000'
+        
+    
