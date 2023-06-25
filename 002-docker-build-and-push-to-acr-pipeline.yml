@@ -17,9 +17,8 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  #vmImageName: ''
-  pool:
-   name: 'acraksvmagentpool'
+  vmImageName: 'acraksvmagentpool'
+   
 
 stages:
 - stage: Build
