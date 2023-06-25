@@ -32,8 +32,8 @@ stages:
     steps:
     - task: CmdLine@2
       inputs:
-        script: 'chmod 655 $(Build.SourcesDirectory)/Dockerfile'
-        workingDirectory: '$(Build.SourcesDirectory)/Dockerfile'
+        script: 'chmod 655 $(dockerfilePath)'
+        workingDirectory: '$(dockerfilePath)'
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
