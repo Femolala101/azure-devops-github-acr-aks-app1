@@ -30,10 +30,10 @@ stages:
        name: $(name) 
       #vmImage: $(vmImageName)
     steps:
-    - task: CmdLine@2
+    - task: Bash@3
       inputs:
-        script: 'chmod 655 $(dockerfilePath)'
-        workingDirectory: '$(dockerfilePath)'
+       filePath: '$(dockerfilePath)'
+       arguments: 'chmod 655 $(dockerfilePath)'
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
