@@ -30,7 +30,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      #vmImage: $(vmImageName)
+      #vmImage: $(name)
        name: $(name)
     steps:
     - task: Docker@2
