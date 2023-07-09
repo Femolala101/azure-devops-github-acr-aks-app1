@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'acraks2003626391d6-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  # vmImageName: 'ubuntu-latest'
   pool:
   name: 'Default'
 
