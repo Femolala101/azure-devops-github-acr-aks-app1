@@ -55,7 +55,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      vmImage: $(name)
+      #vmImage: $(name)
       name: $(name)
     environment: 'Femolala101azuredevopsgithubacraksapp1-1589.default'
     strategy:
